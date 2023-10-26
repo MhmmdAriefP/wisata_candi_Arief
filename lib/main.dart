@@ -1,7 +1,6 @@
-import 'package:flutcandi/data/candi_data.dart';
-import 'package:flutcandi/screens/detail_screen.dart';
-import 'package:flutcandi/screens/profile_screen_dart.dart';
 import 'package:flutter/material.dart';
+import 'package:wisata_candi/screens/detail_screen.dart';
+import 'data/candi_data.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,12 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Wisata candi',
+      title: 'Wisata Candi',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ProfileScreen(),
+      home: DetailScreen(candi: candiList[0]),
     );
   }
 }
+

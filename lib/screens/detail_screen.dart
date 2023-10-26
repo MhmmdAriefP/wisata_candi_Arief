@@ -1,6 +1,7 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutcandi/models/candi.dart';
 import 'package:flutter/material.dart';
+import 'package:wisata_candi/models/candi.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+
 class DetailScreen extends StatelessWidget {
   Candi candi;
   DetailScreen({super.key, required this.candi});
@@ -131,18 +132,3 @@ class DetailScreen extends StatelessWidget {
       ),);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
